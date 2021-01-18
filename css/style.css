@@ -1,0 +1,312 @@
+/*
+=====================================================================
+|| Template Name    : Arm. | Responsive Bootstrap 5 Personal Template
+|| Author           : EMOneTheme
+|| Version          : 1.0.0
+|| Created          : JAN 2021
+|| File Description : Main css file of the template
+=====================================================================
+*/
+
+/*
+==========================
+    1.BASIC
+    2.COMMON
+    3.BUTTON
+    4.HOME
+    5.ABOUT 
+    6.SERVICES
+    7.CLIENT
+    8.WORK
+    9.CONTACT
+    10.FOOTER
+    11.RESPONSIVE
+==========================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rubik:wght@500;600&display=swap');
+/* 
+-----------------------------
+   ======= 1. BASIC =======
+-----------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  color: #575747;
+}
+/* 
+-----------------------------
+   ======= 1. COMMON =======
+-----------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  color: #282924;
+}
+h1 {
+  font-size: 52px;
+}
+h2 {
+  font-size: 42px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+a {
+  font-size: 16px;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+p {
+  color: ;
+}
+section {
+  padding: 110px 0;
+}
+
+/* 
+-----------------------------
+   ======= 1. BUTTON =======
+-----------------------------
+*/
+a.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: 500;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+  position: relative;
+  z-index: 11;
+  overflow: hidden;
+  transition: 0.3s color linear;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.3s color linear;
+  -moz-transition: 0.3s color linear;
+  -ms-transition: 0.3s color linear;
+  -o-transition: 0.3s color linear;
+}
+a.btn::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f1c40f;
+  transition: 0.325s linear;
+  z-index: -11;
+  -webkit-transition: 0.325s linear;
+  -moz-transition: 0.325s linear;
+  -ms-transition: 0.325s linear;
+  -o-transition: 0.325s linear;
+}
+a.btn:hover {
+  color: #fff;
+}
+a.btn:hover:before {
+  width: 100%;
+}
+a.btn:focus,
+a.btn:checked {
+  outline: none;
+  box-shadow: none;
+}
+
+/* 
+-----------------------------
+   ======= 1. HEADER =======
+-----------------------------
+*/
+header {
+  padding: 10px 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(155, 154, 154);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link {
+  font-weight: 500;
+  margin: 0 14px;
+  padding: 0;
+  color: #fff;
+  transition: 0.3s color linear;
+  -webkit-transition: 0.3s color linear;
+  -moz-transition: 0.3s color linear;
+  -ms-transition: 0.3s color linear;
+  -o-transition: 0.3s color linear;
+}
+.nav-link:hover {
+  color: #f1c40f;
+}
+/* 
+-----------------------------
+   ======= 1. HOME =======
+-----------------------------
+*/
+.home-area {
+  height: 100vh;
+  background-color: #000000e1;
+
+  color: #ffffff;
+}
+.home-area h1,
+h3 {
+  color: #ffffff;
+}
+/* #5c91ca; */
+.home-area .container {
+  height: 100%;
+}
+.hero-home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.hero-home img {
+  height: 180px;
+  width: 180px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.hero-home h3 {
+  margin-top: 14px;
+}
+h3 span {
+  color: #f1c40f;
+}
+.hero-home h1 {
+  margin: 6px 0;
+}
+.hero-home p {
+  max-width: 90%;
+  width: 630px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.home-btn-group .home-btn1 {
+  margin-right: 8px;
+}
+/* 
+-----------------------------
+   ======= 1. ABOUT =======
+-----------------------------
+*/
+.about-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-img {
+  width: 100%;
+  height: 100%;
+  padding: 15px 80px 0px 0;
+  position: relative;
+}
+.about-img:after {
+  position: absolute;
+  content: '';
+  display: inline;
+  top: 8%;
+  left: 10%;
+  width: 85%;
+  height: 100%;
+  z-index: -1;
+  border: 4px solid #f1c40f;
+}
+.about-content h4 {
+  margin-bottom: 24px;
+}
+.about-list {
+  margin-bottom: 22px;
+}
+.about-list ul {
+  margin-bottom: 7px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.about-list .about-list-title {
+  min-width: 170px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.about-social {
+  display: flex;
+  align-items: center;
+}
+.about-social .btn {
+  margin-right: 130px;
+}
+.about-social a.icon {
+  color: #f1c40f;
+  height: 30px;
+  width: 30px;
+}
+.about-social a.icon:hover i {
+  background-color: #f1c40f;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+}
+.about-social i {
+  height: 40px;
+  overflow: hidden;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+
